@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto:400,500')
+
+$color-main: #E3CBA1
+
+*
+  box-sizing: border-box
+
+body 
+  background: #000
+  display: flex
+  justify-content: center
+  align-items: center
+  font-family: 'Roboto', sans-serif
+  color: #fff
+  margin: 0
+  height: 100vh
+  
+#dribbble 
+  width: 1446px
+  height: 824px
+  background: #ced3d8
+  display: flex
+  justify-content: center
+  align-items: center
+  background-image: url(img/bg.jpg)
+  background-size: cover
+
+
+#frame 
+  transform: scale(1.1) 
+  background: #000
+  height: 610px
+  width: 1086px
+  overflow: hidden
+  position: relative
+  background-image: url('img/full-dance-a.jpg')
+  background-size: cover
+  padding: 40px 45px
+  padding-bottom: 30px
+  display: flex
+  justify-content: space-between
+  flex-direction: column 
+  border: 3px solid black
+  border-radius: 5px
+
+button:focus
+  outline: 0
+
+header
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  img
+    height: 18px
+  
+  nav
+    a
+      font-family: 'Oswald', sans-serif
+      text-transform: uppercase
+      opacity: .5
+      filter: blur(1.5px)
+      margin-left: 40px
+      font-size: .85em
+      letter-spacing: 5px
+      color: #fff
+      text-decoration: none
+      position: relative
+      transition: .3s  ease
+      transition-property: color, filter, opacity
+
+      &:hover
+        opacity: 1
+        filter: blur(0px)
+        color: #F3E8CD
+
+  .nav--active
+    opacity: 1
+    filter: blur(0px)
+    text-shadow: 0px 2px 43px rgba(#E4CC9F, 1)
+    background: linear-gradient(to right, #F3E8CD, #B59B69)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+
+main
+  margin-left: 140px
+  margin-top: 70px
+  max-width: 400px
+  position: relative
+  width: 100%
+  z-index: 1
+
+  h1
+    font-family: 'Oswald', sans-serif
+    letter-spacing: 4px
+    font-size: 5.1em
+    line-height: 1.2
+    font-weight: 300
+    text-shadow: 2px 2px 84px rgba(#fff, .29)
+    text-transform: uppercase
+    
+    span
+      color: rgba(255, 255, 255, 0)
+      -webkit-text-stroke: 1px $color-main
+      display: block
+      text-shadow: 2px 2px 84px rgba(#fff, .29)
+
+  p
+    position: absolute
+    top: 12px
+    left: -30px
+    text-shadow: 2px 2px 84px rgba(#fff, .15)
+    color: #545542
+    max-width: 400px
+    letter-spacing: 18px
+    line-height: 3.4
+    font-size: .9em
+    text-transform: uppercase
+    font-family: 'Oswald', sans-serif
+    z-index: -1
+
+footer
+  display: flex
+  justify-content: space-between
+  align-items: flex-end
+  
+  .current-slide-info
+    display: flex
+    align-items: center
+
+    &__progress
+      height: 100px
+      width: 3px
+      margin-right: 20px
+      background: rgba($color-main, .2)
+      position: relative
+
+      &--active
+        height: 65%
+        background: $color-main
+        position: absolute
+        bottom: 0
+        width: 100%
+
+    &__desc
+
+    h2
+      font-family: 'Oswald', sans-serif
+      color: $color-main
+      font-weight: 200
+      letter-spacing: 1px
+      margin-bottom: 0
+
+    p
+      font-weight: 300
+      font-size: .7em
+      max-width: 200px
+      line-height: 2
+      opacity: 0.7
+      margin-top: .7em
+
+  .next-slide-info
+    position: absolute
+    right: 0
+    bottom: 0
+    display: flex
+    align-items: flex-end
+    color: #000
+    cursor: pointer
+
+    &:hover
+
+      .next-slide-info__img
+        transform: translate(-40px, -20px) rotate(-5deg)
+        opacity: 0
+        filter: blur(20px)
+
+      .next-slide-info__desc__img
+        opacity: .2
+
+
+    &__img
+      background-image: url(img/thumb-dance-b.jpg)
+      background-size: cover
+      width: 160px
+      height: 120px
+      transition: 1s all ease
+
+    &__desc
+      background: $color-main
+      padding: 40px 30px 30px 30px
+      width: 200px
+      height: 180px 
+      display: flex
+      justify-content: center
+      align-items: center
+      position: relative
+      overflow: hidden
+      z-index: 1
+
+      &__img
+        background-image: url(img/thumb-dance-b-no.jpg)
+        top: -3px
+        left: -3px
+        background-size: cover
+        width: 100%
+        height: 100%
+        position: absolute
+        transition: 1s all ease
+        opacity: 0
+
+    h2
+      margin: 0
+      font-size: 1.3em
+
+    h3
+      margin: 0px
+      margin-bottom: 1em
+      opacity: .6
+      font-size: .6em
+      font-weight: 500  
+      text-transform: uppercase
+      letter-spacing: 1px
+
+    p
+      opacity: .6
+      font-size: 0.7em
+      line-height: 1.6
+      margin-top: 0.7em
+      margin-bottom: 0
+                  
