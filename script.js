@@ -130,10 +130,8 @@ const displacementSlider = function(opts) {
         if (!isAnimating) {
           isAnimating = true;
 
-          document
-            .getElementById('pagination')
-            .querySelectorAll('.active')[0].className = '';
-          this.className = 'active';
+          const thumb = document.querySelector('.next-slide-info__img');
+          thumb.style.backgroundImage = 'url(img/thumb-dance-a.jpg)';
 
           let slideId = parseInt(this.dataset.slide, 10);
 

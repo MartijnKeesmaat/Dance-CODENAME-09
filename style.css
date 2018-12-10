@@ -15,8 +15,8 @@ body {
 }
 
 #dribbble {
-  width: 1446px;
-  height: 824px;
+  width: 1200px;
+  height: 900px;
   background: #ced3d8;
   display: flex;
   justify-content: center;
@@ -26,7 +26,7 @@ body {
 }
 
 #frame {
-  transform: scale(1.1);
+  transform: scale(1);
   background: #000;
   height: 610px;
   width: 1086px;
@@ -190,10 +190,13 @@ footer .next-slide-info__img {
   width: 160px;
   height: 120px;
   transition: 1s all ease;
+  border: none;
 }
 footer .next-slide-info__desc {
   background: #E3CBA1;
   padding: 40px 30px 30px 30px;
+  font-size: 1em;
+  text-align: left;
   width: 200px;
   height: 180px;
   display: flex;
@@ -202,6 +205,8 @@ footer .next-slide-info__desc {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  border: none;
+  cursor: pointer;
 }
 footer .next-slide-info__desc__img {
   background-image: url(img/thumb-dance-b-no.jpg);
@@ -209,6 +214,7 @@ footer .next-slide-info__desc__img {
   left: -3px;
   background-size: cover;
   width: 100%;
+  transform: scale(1.1);
   height: 100%;
   position: absolute;
   transition: 1s all ease;
@@ -253,7 +259,7 @@ footer .next-slide-info p {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1, 1.41);
+  transform: translate(-50%, -50%) scale(1, 1.6);
   z-index: 2;
 }
 #slider img {
@@ -285,7 +291,6 @@ footer .next-slide-info p {
 }
 #slider-content .meta {
   display: inline-block;
-  font-family: "Arial", sans-serif;
   font-size: 11px;
   letter-spacing: 5px;
   color: #88888a;
@@ -306,57 +311,6 @@ footer .next-slide-info p {
   width: 45px;
   height: 2px;
   background-color: #393d40;
-}
-
-#pagination {
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 30px;
-  z-index: 6;
-}
-#pagination button {
-  display: block;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: 0;
-  width: 16px;
-  height: 16px;
-  background-color: #FFFFFF;
-  border-radius: 100%;
-  padding: 0;
-  margin: 30px 0;
-  cursor: pointer;
-  position: relative;
-  opacity: 0.2;
-  transition: opacity 0.2s ease-in-out;
-  outline: none;
-}
-#pagination:hover {
-  opacity: 0.5;
-}
-#pagination.active {
-  opacity: 1;
-}
-#pagination.active:before {
-  width: 300%;
-  height: 300%;
-  opacity: 1;
-}
-#pagination:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  opacity: 0;
-  transition: opacity 0.4s ease-in-out, width 0.4s ease-in-out, height 0.4s ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */

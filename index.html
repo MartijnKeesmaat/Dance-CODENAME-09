@@ -8,6 +8,14 @@
     <title>Ballet</title>
   </head>
   <body>
+    <div class="cursor">
+      <div class="cross">
+        <div class="cross__x"></div>
+        <div class="cross__y"></div>
+      </div>
+    </div>
+    
+    
     <div id="dribbble">
       <div id="frame">
         <header>
@@ -17,16 +25,15 @@
             <a href="#">Contact</a>
           </nav>
         </header>
+
         <main>
           <div id="slider">
             <div class="slider-inner">
               <div id="slider-content">
-                <!-- <h1 id="slide-title"><span>Avant</span> Allongé</h1> -->
                 
                 <div class="lined-font" id="slide-status">Avant</div>
                 <h1 id="slide-title">Allongé</h2>
                 
-                <!-- <div class="meta">Status</div> -->
                 <span data-slide-status="0">Avant</span>
                 <span data-slide-title="0">Allongé</span>
                 
@@ -40,11 +47,6 @@
             <img src="img/full-dance-a.jpg" />
             <img src="img/full-dance-b.jpg" />
 
-            <div id="pagination">
-              <button class="active" data-slide="0"></button>
-              <button data-slide="1"></button> <button data-slide="2"></button>
-              <button data-slide="3"></button>
-            </div>
           </div>
         </main>
 
@@ -61,9 +63,9 @@
               </p>
             </div>
           </div>
-          <div class="next-slide-info">
-            <div class="next-slide-info__img"></div>
-            <div class="next-slide-info__desc">
+          <div class="next-slide-info" id="pagination">
+            <button data-slide="0" class="next-slide-info__img"></button>
+            <button data-slide="1" class="next-slide-info__desc active">
               <div class="next-slide-info__desc__img"></div>
               <div>
                 <h3>Next</h3>
@@ -73,7 +75,7 @@
                   ground.
                 </p>
               </div>
-            </div>
+            </button>
           </div>
         </footer>
       </div>
