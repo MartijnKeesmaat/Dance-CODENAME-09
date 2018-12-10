@@ -18,8 +18,34 @@
           </nav>
         </header>
         <main>
-          <h1><span>Avant</span> Allongé</h1>
-          <p>In classical ballet, allongé is an adjective that describes</p>
+          <div id="slider">
+            <div class="slider-inner">
+              <div id="slider-content">
+                <!-- <h1 id="slide-title"><span>Avant</span> Allongé</h1> -->
+                
+                <div class="lined-font" id="slide-status">Avant</div>
+                <h1 id="slide-title">Allongé</h2>
+                
+                <!-- <div class="meta">Status</div> -->
+                <span data-slide-status="0">Avant</span>
+                <span data-slide-title="0">Allongé</span>
+                
+                <span data-slide-status="1">Centre</span>
+                <span data-slide-title="1">Pirouette</span>
+
+                <p>In classical ballet, allongé is an adjective that describes</p>
+                </div>
+            </div>
+
+            <img src="img/full-dance-a.jpg" />
+            <img src="img/full-dance-b.jpg" />
+
+            <div id="pagination">
+              <button class="active" data-slide="0"></button>
+              <button data-slide="1"></button> <button data-slide="2"></button>
+              <button data-slide="3"></button>
+            </div>
+          </div>
         </main>
 
         <footer>
@@ -52,5 +78,25 @@
         </footer>
       </div>
     </div>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-40525870-5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-40525870-5');
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
